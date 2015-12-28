@@ -1,0 +1,33 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: [] # files to exclude
+highlighter: pygments
+markdown: kramdown
+# disqus: dbyll
+# google_analytics: dbyll
+gems: ["jekyll-paginate", "pygments.rb"]
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Hyper3D
+
+title: Hyper3D
+description: High-end rendering engine for three.js
+author:
+  # name: yvt
+  # email: i@yvt.jp
+  github: Hyper3D
+  # twitter: yvt
+  bio: High-end rendering engine for three.js
+  # email_md5: 17b77cdf9b0403ec41532837ce7f712e
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH:
