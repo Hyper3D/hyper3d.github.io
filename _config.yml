@@ -22,12 +22,9 @@ title: Hyper3D
 description: High-end rendering engine for three.js
 role: main
 author:
-  name: yvt
-  # email: i@yvt.jp
+  name: Hyper3D Developers
   github: Hyper3D
-  # twitter: yvt
   bio: High-end rendering engine for three.js
-  # email_md5: 17b77cdf9b0403ec41532837ce7f712e
 
 
 google_analytics: UA-22347556-10
