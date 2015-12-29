@@ -3,11 +3,13 @@
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: [] # files to exclude
-highlighter: pygments
-markdown: kramdown
-# disqus: dbyll
-# google_analytics: dbyll
+
 gems: ["jekyll-paginate", "pygments.rb"]
+
+markdown: redcarpet
+highlighter: pygments
+redcarpet:
+    extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 
 defaults:
   -
