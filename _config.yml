@@ -30,4 +30,6 @@ rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
+google_analytics: UA-22347556-10
+
 BASE_PATH:
