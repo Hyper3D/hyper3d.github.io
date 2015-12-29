@@ -3,6 +3,7 @@
 
 body
     color: #2c3e50
+    font-family: "Ubuntu", sans-serif
 
 .sidebar 
     position: fixed
@@ -51,7 +52,6 @@ a.nav-link:hover
     color: #777 
 
 #bio 
-    font-family: "Courier New", Courier, monospace
     font-size: 11px
     margin: 0 auto
     margin-bottom: 10px
@@ -98,28 +98,49 @@ article .share .btn
 
 
 #sidenav 
-    padding-left: 20px
+    padding-left: 40px
     padding-top: 40px
 
     > li 
         position: relative
-        margin: 10px 0
+        margin: 20px 0
+        transform: translate(5px, 0)
+        transition: transform 0.1s
 
         > a 
             display: block
-            color: #2c3e50
+            color: white
             z-index: 1
             position: relative
+            font-size: 150%
+            font-weight: 100
+            line-height: 40px
+            text-align: left
+            padding-left: 20px
 
         &::before 
             content: ""
             background: white
             position: absolute
+            opacity: 0
             left: 0
-            right: -20px
+            right: -30px
             top: 0
             bottom: 0
             transform: skewX(-20deg)
+            pointer-events: none
+            transition: opacity 0.1s
+
+        &:hover, &.active
+            transform: translate(0, 0)
+        &:hover
+            &::before
+                opacity: 0.2
+        &.active
+            > a
+                color: #2c3e50
+            &::before
+                opacity: 1 !important
 
 
 .page-header 
