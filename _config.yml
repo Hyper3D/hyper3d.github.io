@@ -19,7 +19,7 @@ defaults:
 title: Hyper3D
 description: High-end rendering engine for three.js
 author:
-  # name: yvt
+  name: yvt
   # email: i@yvt.jp
   github: Hyper3D
   # twitter: yvt
