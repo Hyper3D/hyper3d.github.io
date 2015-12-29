@@ -1,0 +1,9 @@
+<li class="submenu">
+	<ul class="list-unstyled">
+		{% for item in include.pages %}
+		{% if page.url contains item.href %}
+		<li class="active">{% else %}<li>
+		{% endif %}<a href="{{ site.url }}{{ item.href }}">{{ item.title }}</a></li>
+		{% endfor %}
+	</ul>
+</li>

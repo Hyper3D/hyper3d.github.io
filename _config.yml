@@ -18,6 +18,7 @@ defaults:
 
 title: Hyper3D
 description: High-end rendering engine for three.js
+role: main
 author:
   name: yvt
   # email: i@yvt.jp
@@ -26,9 +27,6 @@ author:
   bio: High-end rendering engine for three.js
   # email_md5: 17b77cdf9b0403ec41532837ce7f712e
 
-rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
 
 google_analytics: UA-22347556-10
 

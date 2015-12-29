@@ -1,16 +1,18 @@
-$( document ).ready(function() {
+$(function() {
 
-	/* Sidebar height set */
-	$('.sidebar').css('min-height',$(document).height());
+	/* Sidebar scrollbar */
+	$('#sidebar').mCustomScrollbar({
+		theme: "minimal-dark"
+	});
 
-	/* Secondary contact links */
-	var scontacts = $('#contact-list-secondary');
-	var contact_list = $('#contact-list');
-	
-	scontacts.hide();
-	
-	contact_list.mouseenter(function(){ scontacts.fadeIn(); });
-	
-	contact_list.mouseleave(function(){ scontacts.fadeOut(); });
+	function relayout()
+	{
+		$('#sidebar .mCSB_container').css({
+			"padding-top": $(window).height() * 0.1
+		});
+	}
+
+	relayout();
+	$(window).resize(relayout);
 
 });

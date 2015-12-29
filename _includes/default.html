@@ -20,6 +20,7 @@
 	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="{{ site.BASE_PATH }}/assets/resources/jquery.mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500&map;subset=latin,latin-ext" rel="stylesheet">
 
@@ -83,7 +84,7 @@
 		</ul>
 	</div>-->
 
-	<div class="col-sm-3 sidebar hidden-xs">
+	<div class="col-sm-3 sidebar hidden-xs" id="sidebar">
 		{% include sidebar.html %}
 	</div>
 
@@ -99,6 +100,7 @@
 	</div>
 
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
 	{% if site.google_analytics %}
