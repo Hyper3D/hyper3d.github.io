@@ -1,9 +1,11 @@
 <li class="submenu">
 	<ul class="list-unstyled">
 		{% for item in include.pages %}
-		{% if page.url contains item.href %}
+		{% capture href2 %}{{item.href}}.html{% endcapture %}
+		{% capture href3 %}{{item.href}}.md{% endcapture %}
+		{% if page.url == item.href or page.url == href2 or page.url == href3 %}
 		<li class="active">{% else %}<li>
-		{% endif %}<a href="{{ site.url }}{{ item.href }}">{{ item.title }}</a></li>
+		{% endif %}<a href="{{ site.baseurl }}{{ item.href }}">{{ item.title }}</a></li>
 		{% endfor %}
 	</ul>
 </li>
