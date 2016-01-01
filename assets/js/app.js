@@ -2,7 +2,8 @@ $(function() {
 
 	/* Sidebar scrollbar */
 	$('#sidebar').mCustomScrollbar({
-		theme: "minimal-dark"
+		theme: "minimal-dark",
+		scrollInertia: 200
 	});
 
 	function relayout()
