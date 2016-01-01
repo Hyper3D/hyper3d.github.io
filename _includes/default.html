@@ -17,30 +17,30 @@
 	<![endif]-->
 
 	<!-- Le styles -->
-	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/resources/jquery.mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
+	<link href="{{ site.baseurl }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="{{ site.baseurl }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="{{ site.baseurl }}/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="{{ site.baseurl }}/assets/resources/jquery.mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+	<link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500&map;subset=latin,latin-ext" rel="stylesheet">
 	{% if page.custom_css %}
 		{% for stylesheet in page.custom_css %}
-			<link rel="stylesheet" href="{{ site.BASE_PATH }}{{ stylesheet }}" media="screen" type="text/css">
+			<link rel="stylesheet" href="{{ site.baseurl }}{{ stylesheet }}" media="screen" type="text/css">
 		{% endfor %}
 	{% endif %}
 
 	<!-- Le fav and touch icons -->
 	<link rel="shortcut icon" href="images/favicon.ico">
 
-	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/feed.xml">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
 	
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/assets/resources/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app.js"></script>
 	{% if page.custom_js %}
 		{% for js_file in page.custom_js %}
-		<script src="{{ site.BASE_PATH }}{{ js_file }}" type="text/javascript"></script>
+		<script src="{{ site.baseurl }}{{ js_file }}" type="text/javascript"></script>
 		{% endfor %}
 	{% endif %}
 </head>
@@ -70,17 +70,17 @@
 				<i class="fa fa-envelope"></i>
 			</a>
 			{% endif %}
-			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="{{ site.BASE_PATH }}/assets/media/logo-dark.svg" alt="{{ site.title }}" class="navbar-logo" />
+			<a class="navbar-brand" href="{{ site.baseurl }}/">
+				<img src="{{ site.baseurl }}/assets/media/logo-dark.svg" alt="{{ site.title }}" class="navbar-logo" />
 			</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="{{ site.BASE_PATH }}/">Home</a></li>
-				<!-- <li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>-->
+				<li><a href="{{ site.baseurl }}/">Home</a></li>
+				<!-- <li><a href="{{ site.baseurl}}/{{ site.categories_path }}">Categories</a></li>
+				<li><a href="{{ site.baseurl}}/{{ site.tags_path }}">Tags</a></li>-->
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
@@ -91,9 +91,9 @@
 			<i class="fa fa-bars"></i>
 		</button>
 		<ul class="dropdown-menu" role="menu">
-			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="{{ site.baseurl}}/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="{{ site.baseurl}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="{{ site.baseurl}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>Tags</a></li>
 			<li class="divider"></li>
 			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
 		</ul>
