@@ -6,7 +6,7 @@ title: Download
 Standalone JS Package
 ---------------------
 
-Single-file JS bundle will be available at [GitHub](https://github.com/Hyper3D/hyper3d/releases).
+Single-file JS bundle can be downloaded at [GitHub releases page](https://github.com/Hyper3D/hyper3d/releases).
 
 Use it like this:
 
