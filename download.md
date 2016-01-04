@@ -13,6 +13,9 @@ Use it like this:
 ```html
 <script type="application/javascript" src="three.min.js"></script>
 <script type="application/javascript" src="hyper3d.min.js"></script>
+<script>
+  var renderer = new Hyper.WebGLHyperRenderer();
+</script>
 ```
 
 npm Package
